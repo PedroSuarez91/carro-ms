@@ -107,19 +107,6 @@ El `RestTemplate` se registra como bean en `RestTemplateConfig`.
 
 ---
 
-## Cómo ejecutar
-
-```bash
-# Con el wrapper de Maven
-./mvnw spring-boot:run
-
-# O empaquetando
-./mvnw clean package
-java -jar target/carro-ms-0.0.1-SNAPSHOT.jar
-```
-
-Requisitos: tener MySQL corriendo con la base `dbcarro` y, para probar el `POST`, los microservicios de Usuarios, Productos y Cupones disponibles.
-
 ## Ejemplo de creación (`POST /api/v1/carros`)
 
 ```json
