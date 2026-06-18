@@ -34,7 +34,7 @@ public class CarroService {
 
         double subtotalGeneral = 0.0;
         for (ItemCarro item : carro.getItems()) {
-            String urlProducto = "http://localhost:8xxx/api/v1/productos/" + item.getIdProducto();
+            String urlProducto = "http://localhost:8090/api/v1/productos/" + item.getIdProducto();
             ProductoDTO producto = restTemplate.getForObject(urlProducto, ProductoDTO.class);
 
             item.setNombreProducto(producto.getNombre());
