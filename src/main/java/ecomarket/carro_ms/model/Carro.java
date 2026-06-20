@@ -24,9 +24,9 @@ public class Carro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long idCarro;
+    private Long idCarro;
 
-    private long idUsuario;
+    private Long idUsuario;
 
     private String nombreUsuario;
 
